@@ -20,8 +20,7 @@ $aluno = new Usuario();
 
 $aluno->loadById(10);
 
-$aluno->update("aluno","@lunoss");
-
+$aluno->delete();
 
 
 echo $aluno;
