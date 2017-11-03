@@ -2,10 +2,19 @@
 
 require_once("config.php");
 
-$root = new Usuario();
+//carrega um usuario
+//$root = new Usuario();
+//$root->loadById(5);
 
-$root->loadById(5);
 
-echo $root;
+//carrega uma lista de usuarios
+ //$lista = Usuario::getList();
+
+$lista = new Usuario();
+$lista->login("dois","123456");
+
+ echo $lista;
+
+
 
  ?>
