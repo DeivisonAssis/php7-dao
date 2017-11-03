@@ -10,11 +10,21 @@ require_once("config.php");
 //carrega uma lista de usuarios
  //$lista = Usuario::getList();
 
-$lista = new Usuario();
-$lista->login("dois","123456");
+//$lista = new Usuario();
+//$lista->login("dois","123456");
 
- echo $lista;
+ //echo $lista;
 
+
+$aluno = new Usuario();
+
+$aluno->loadById(10);
+
+$aluno->update("aluno","@lunoss");
+
+
+
+echo $aluno;
 
 
  ?>
